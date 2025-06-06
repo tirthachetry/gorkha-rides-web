@@ -64,7 +64,7 @@ const Contact = () => {
       {/* Optional: Static WhatsApp Button (not just on success) */}
       { 
       <a
-        href="https://wa.me/8101859911?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20services"
+        href="https://wa.me/+918101859911?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20services"
         target="_blank"
         rel="noopener noreferrer"
         style={{
