@@ -305,3 +305,50 @@ body::before {
   padding: 1rem 2rem;
   border-radius: 10px;
 }
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack sidebar and main content vertically */
+    padding: 1rem;
+  }
+
+  .sidebar {
+    position: relative; /* Remove sticky on mobile */
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 0;
+    padding: 1rem 0;
+  }
+
+  .sidebar ul {
+    display: flex;
+    justify-content: space-around; /* Horizontal nav on mobile */
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    margin: 0;
+  }
+
+  .sidebar ul li a {
+    font-size: 1rem;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 0;
+  }
+}
+input, textarea, button {
+  width: 100%; /* Full width on mobile */
+  max-width: 400px; /* Optional max width for larger phones */
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
